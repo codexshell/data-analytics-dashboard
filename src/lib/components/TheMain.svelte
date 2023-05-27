@@ -1,13 +1,21 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
+
 	import hamburger from '$lib/images/hamburger.svg';
 	import BaseButton from './BaseButton.svelte';
+
+	const dispatch = createEventDispatcher();
+
+	function toggleOffCanvas() {
+		dispatch('toggleOffCanvas');
+	}
 </script>
 
 <main>
 	<header>
-		<div class="hamburger-wrapper">
+		<button on:click={toggleOffCanvas} class="hamburger-wrapper">
 			<img src={hamburger} alt="hamburger" />
-		</div>
+		</button>
 		<span>
 			<a href="/">LOGO</a>
 		</span>
@@ -26,6 +34,10 @@
 </main>
 
 <style>
+	button {
+		background-color: transparent;
+		border: none;
+	}
 	.hamburger-wrapper {
 		cursor: pointer;
 	}

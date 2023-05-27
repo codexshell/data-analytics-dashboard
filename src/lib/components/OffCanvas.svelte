@@ -1,13 +1,21 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
+
 	import arrowLeft from '$lib/images/arrow-left.svg';
+
+	const dispatch = createEventDispatcher();
+
+	function toggleOffCanvas() {
+		dispatch('toggleOffCanvas');
+	}
 
 	const links = ['home', 'my stats', 'members', 'settings', 'help'];
 </script>
 
 <nav>
-	<div class="img-wrapper">
+	<button on:click={toggleOffCanvas} class="img-wrapper">
 		<img src={arrowLeft} alt="arrow-left" />
-	</div>
+	</button>
 
 	<div>
 		<ul>
@@ -19,6 +27,10 @@
 </nav>
 
 <style>
+	button {
+		border: none;
+		background-color: transparent;
+	}
 	li {
 		height: 4.3rem;
 		padding-left: 4.3rem;
@@ -45,6 +57,8 @@
 	nav {
 		display: flow-root;
 		width: 21.3rem;
+		background-color: #2c2931;
+		min-height: 87.2rem;
 	}
 
 	.img-wrapper {
