@@ -25,9 +25,11 @@
 		gap: 1.6rem;
 		padding-inline: 1.1rem;
 		cursor: pointer;
+		transition: all 0.2s ease-in-out;
 	}
 
 	button:hover {
 		background-color: #00a3ff;
+		border: 0.1rem solid #00a3ff;
 	}
 </style>

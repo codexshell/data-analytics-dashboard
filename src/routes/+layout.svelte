@@ -8,12 +8,12 @@
 	}
 
 	:global(body) {
-		font-family: 'Poppins', sans-serif;
 		font-size: 1.6rem;
 		box-sizing: border-box;
 	}
 
 	:global(*, *::before, *::after) {
+		font-family: 'Poppins', sans-serif;
 		box-sizing: inherit;
 		padding: 0;
 		margin: 0;

@@ -1,16 +1,25 @@
 <script>
-	import BaseButton from '$lib/components/BaseButton.svelte';
+	import TheMain from '$lib/components/TheMain.svelte';
 </script>
 
-<main>
-	<BaseButton />
-</main>
+<div class="wrapper">
+	<div class="container">
+		<TheMain />
+	</div>
+</div>
 
 <style>
-	main {
-		background-color: gray;
-		display: grid;
-		place-content: center;
-		height: 100vh;
+	.wrapper {
+		background-image: linear-gradient(238.71deg, #bd00ff 7.63%, #00a3ff 117.53%);
+		padding-inline: 1.6rem;
+		padding-block: 1.2rem;
+	}
+
+	.container {
+		height: 100%;
+		width: 100%;
+		background-color: #221f26;
+		border-radius: 1.3rem;
+		min-height: 87.2rem;
 	}
 </style>
