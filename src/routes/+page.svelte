@@ -55,8 +55,8 @@
 		padding-block: 1.2rem;
 		min-height: 100vh;
 		display: flex;
-    align-items: center;
-    justify-content: center;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.container {
@@ -65,7 +65,7 @@
 		border-radius: 1.3rem;
 		height: 87.2rem;
 		overflow: hidden;
-    max-width: 1440px;
+		max-width: 1440px;
 	}
 
 	@media only screen and (min-width: 1280px) {
@@ -75,7 +75,7 @@
 
 		.container {
 			display: flex;
-      max-height: 66.4rem;
+			max-height: 66.4rem;
 		}
 	}
 </style>

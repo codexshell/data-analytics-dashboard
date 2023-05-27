@@ -2,7 +2,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	import hamburger from '$lib/images/hamburger.svg';
-	import BaseButton from './BaseButton.svelte';
+	import BaseButton from '$lib/components/BaseButton.svelte';
 
 	const dispatch = createEventDispatcher();
 
@@ -67,6 +67,10 @@
 
 	main {
 		display: flow-root;
+		height: 100%;
+		width: 100%;
+		background: bottom left -15rem / cover no-repeat url('/src/lib/images/bg-main.jpg') #221f26;
+		background-blend-mode: screen, normal;
 	}
 
 	.logo {
@@ -87,6 +91,10 @@
 	}
 
 	@media only screen and (min-width: 1280px) {
+		main {
+			background-position: center right;
+		}
+
 		.hamburger-wrapper {
 			display: none;
 		}
