@@ -13,7 +13,7 @@
 </script>
 
 <nav>
-	<button on:click={toggleOffCanvas} class="img-wrapper">
+	<button on:click={toggleOffCanvas} class="btn-wrapper">
 		<img src={arrowLeft} alt="arrow-left" />
 	</button>
 
@@ -61,9 +61,18 @@
 		min-height: 87.2rem;
 	}
 
-	.img-wrapper {
+	.btn-wrapper {
 		margin-left: 4.4rem;
 		margin-top: 4.1rem;
 		cursor: pointer;
+	}
+
+	@media only screen and (min-width: 1280px) {
+		ul {
+			margin-top: 5.8rem;
+		}
+		.btn-wrapper {
+			display: none;
+		}
 	}
 </style>

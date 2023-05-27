@@ -17,7 +17,7 @@
 			<img src={hamburger} alt="hamburger" />
 		</button>
 		<span>
-			<a href="/">LOGO</a>
+			<a class="logo" href="/">LOGO</a>
 		</span>
 	</header>
 
@@ -69,7 +69,7 @@
 		display: flow-root;
 	}
 
-	a {
+	.logo {
 		text-decoration: none;
 		color: #2d7dff;
 		font-weight: 800;
@@ -84,5 +84,36 @@
 		gap: 10.8rem;
 		margin-inline: 3.2rem;
 		margin-block: 2.4rem;
+	}
+
+	@media only screen and (min-width: 1280px) {
+		.hamburger-wrapper {
+			display: none;
+		}
+
+		header {
+			margin-top: 5.8rem;
+			margin-left: 10.3rem;
+		}
+
+		h1 {
+			margin-top: 4.6rem;
+			margin-left: 10.1rem;
+			font-size: 6.4rem;
+			line-height: 5.696rem;
+		}
+
+		h2 {
+			margin-top: 3.3rem;
+			margin-left: 10.2rem;
+			font-size: 4.8rem;
+			line-height: 5.347rem;
+			max-width: 39.8rem;
+		}
+
+		.btn-wrapper {
+			margin-left: 10.2rem;
+			margin-top: 5.7rem;
+		}
 	}
 </style>
