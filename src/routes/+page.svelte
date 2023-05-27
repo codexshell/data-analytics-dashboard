@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import BaseButton from '$lib/components/BaseButton.svelte';
+</script>
+
+<main>
+	<BaseButton />
+</main>
+
+<style>
+	main {
+		background-color: gray;
+		display: grid;
+		place-content: center;
+		height: 100vh;
+	}
+</style>
