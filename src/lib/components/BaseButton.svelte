@@ -23,6 +23,11 @@
 		display: flex;
 		align-items: center;
 		gap: 1.6rem;
-    padding-inline: 1.1rem;
+		padding-inline: 1.1rem;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #00a3ff;
 	}
 </style>
