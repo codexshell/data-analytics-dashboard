@@ -1,10 +1,12 @@
 <script>
-	import TheMain from '$lib/components/TheMain.svelte';
+	// import TheMain from '$lib/components/TheMain.svelte';
+	import OffCanvas from '$lib/components/OffCanvas.svelte';
 </script>
 
 <div class="wrapper">
 	<div class="container">
-		<TheMain />
+		<!-- <TheMain /> -->
+		<OffCanvas />
 	</div>
 </div>
 
@@ -13,6 +15,7 @@
 		background-image: linear-gradient(238.71deg, #bd00ff 7.63%, #00a3ff 117.53%);
 		padding-inline: 1.6rem;
 		padding-block: 1.2rem;
+		min-height: 100vh;
 	}
 
 	.container {
