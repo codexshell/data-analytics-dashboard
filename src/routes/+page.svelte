@@ -1,4 +1,6 @@
 <script>
+	import { fly } from 'svelte/transition';
+
 	import TheMain from '$lib/components/TheMain.svelte';
 	import OffCanvas from '$lib/components/OffCanvas.svelte';
 
@@ -12,7 +14,7 @@
 <div class="wrapper">
 	<div class="container">
 		{#if showOffCanvas}
-			<div class="canvas-wrapper">
+			<div transition:fly={{ x: -200, duration: 1000 }} class="canvas-wrapper">
 				<OffCanvas on:toggleOffCanvas={toggleOffCanvas} />
 			</div>
 		{/if}
